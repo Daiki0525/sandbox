@@ -1,0 +1,8 @@
+#Mission
+hexdump -C の実装
+
+#To Do
+関数使ってきれいに
+改行意外の表示出来ない文字の変換
+
+#Done
