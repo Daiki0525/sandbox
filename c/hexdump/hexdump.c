@@ -27,7 +27,7 @@ int main(int argc, char *argv[]){
         if(read_bytecount % 16 == 0)
         {
             /*-- print read byte count --*/
-            printf("%08x  ",read_bytecount);
+            printf("%08x  ",read_bytecount - 16);
             /*-- print hexdump --*/
             for(ix = 0; ix < 16; ix++)
             {
@@ -48,7 +48,7 @@ int main(int argc, char *argv[]){
             printf(" |\n");
         }
     }
-        printf("%08x  ",read_bytecount);
+        printf("%08x  ",read_bytecount - 16);
         for(ix = 0; ix < ((read_bytecount - 1) % 16); ix++)
         {
             printf("%02x ",hexchar[ix]);
