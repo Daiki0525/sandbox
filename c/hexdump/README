@@ -4,5 +4,9 @@ hexdump -C の実装
 #To Do
 関数使ってきれいに
 改行意外の表示出来ない文字の変換
+byte count おかしい？
 
 #Done
+#はまったとこ
+if( strlen(read_char) == 16 )//文字列満タンなら
+    が strlenの返り値はint型じゃないからif文に入らない
