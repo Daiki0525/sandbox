@@ -1,15 +1,16 @@
 #include<stdio.h>
 
-int main(void){
+int main(void)
+{
     int ix;
-    for(ix=1;ix<101;ix++){
-        if(ix%3==0){
+    for (ix=1; ix<=100; ix++) {
+        if (ix%3 == 0) {
             printf("fizz");
         }
-        if(ix%5==0){
+        if (ix%5 == 0) {
             printf("buzz");
         }
-        if(ix%3!=0 && ix%5!=0){
+        if (ix %3 !=0 && ix % 5 != 0) {
             printf("%d",ix);
         }
         printf("\n");
